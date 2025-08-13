@@ -1,0 +1,224 @@
+{
+  "step1": {
+    "fields": [
+      {
+        "id": "__EVENTTARGET",
+        "name": "__EVENTTARGET",
+        "type": "hidden",
+        "placeholder": "",
+        "required": false,
+        "maxLength": -1,
+        "pattern": "",
+        "className": ""
+      },
+      {
+        "id": "__EVENTARGUMENT",
+        "name": "__EVENTARGUMENT",
+        "type": "hidden",
+        "placeholder": "",
+        "required": false,
+        "maxLength": -1,
+        "pattern": "",
+        "className": ""
+      },
+      {
+        "id": "__VIEWSTATE",
+        "name": "__VIEWSTATE",
+        "type": "hidden",
+        "placeholder": "",
+        "required": false,
+        "maxLength": -1,
+        "pattern": "",
+        "className": ""
+      },
+      {
+        "id": "__VIEWSTATEGENERATOR",
+        "name": "__VIEWSTATEGENERATOR",
+        "type": "hidden",
+        "placeholder": "",
+        "required": false,
+        "maxLength": -1,
+        "pattern": "",
+        "className": ""
+      },
+      {
+        "id": "__VIEWSTATEENCRYPTED",
+        "name": "__VIEWSTATEENCRYPTED",
+        "type": "hidden",
+        "placeholder": "",
+        "required": false,
+        "maxLength": -1,
+        "pattern": "",
+        "className": ""
+      },
+      {
+        "id": "__EVENTVALIDATION",
+        "name": "__EVENTVALIDATION",
+        "type": "hidden",
+        "placeholder": "",
+        "required": false,
+        "maxLength": -1,
+        "pattern": "",
+        "className": ""
+      },
+      {
+        "id": "ctl00_ContentPlaceHolder1_txtadharno",
+        "name": "ctl00$ContentPlaceHolder1$txtadharno",
+        "type": "text",
+        "placeholder": "Your Aadhaar No",
+        "required": false,
+        "maxLength": 12,
+        "pattern": "",
+        "className": "form-control",
+        "label": "1. Aadhaar Number/ आधार संख्या"
+      },
+      {
+        "id": "ctl00_ContentPlaceHolder1_txtownername",
+        "name": "ctl00$ContentPlaceHolder1$txtownername",
+        "type": "text",
+        "placeholder": "Name as per Aadhaar",
+        "required": false,
+        "maxLength": 100,
+        "pattern": "",
+        "className": "form-control",
+        "label": "2. Name of Entrepreneur / उद्यमी का नाम"
+      },
+      {
+        "id": "ctl00_ContentPlaceHolder1_chkDecarationA",
+        "name": "ctl00$ContentPlaceHolder1$chkDecarationA",
+        "type": "checkbox",
+        "placeholder": "",
+        "required": false,
+        "maxLength": -1,
+        "pattern": "",
+        "className": ""
+      },
+      {
+        "id": "ctl00_ContentPlaceHolder1_btnValidateAadhaar",
+        "name": "ctl00$ContentPlaceHolder1$btnValidateAadhaar",
+        "type": "submit",
+        "placeholder": "",
+        "required": false,
+        "maxLength": -1,
+        "pattern": "",
+        "className": "btn btn-primary"
+      }
+    ],
+    "validations": [],
+    "labels": []
+  },
+  "step2": {
+    "fields": [
+      {
+        "id": "checkbox",
+        "name": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "required": false,
+        "maxLength": -1,
+        "pattern": "",
+        "className": "light_mode uwaw-featugres__item__i",
+        "label": ""
+      }
+    ],
+    "validations": [],
+    "labels": []
+  },
+  "uiComponents": {
+    "dropdowns": [],
+    "buttons": [
+      {
+        "id": "",
+        "text": "",
+        "type": "button",
+        "className": "mobile-nav-toggle d-lg-none"
+      },
+      {
+        "id": "ctl00_ContentPlaceHolder1_btnValidateAadhaar",
+        "text": "Validate & Generate OTP",
+        "type": "submit",
+        "className": "btn btn-primary"
+      },
+      {
+        "id": "",
+        "text": "",
+        "type": "button",
+        "className": "uwaw-close"
+      },
+      {
+        "id": "speak",
+        "text": "Text To Speech",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "btn-s9",
+        "text": "Bigger Text",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "btn-s13",
+        "text": "Text Spacing",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "btn-s12",
+        "text": "Line Height",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "btn-s10",
+        "text": "Highlight Links",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "btn-df",
+        "text": "Dyslexia Friendly",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "btn-s11",
+        "text": "Hide Images",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "btn-cursor",
+        "text": "Cursor",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "dark-btn",
+        "text": "Light-Dark",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "btn-invert",
+        "text": "Invert Colors",
+        "type": "submit",
+        "className": "uwaw-features__item__i"
+      },
+      {
+        "id": "reset-all",
+        "text": "Reset All Settings",
+        "type": "submit",
+        "className": "btn-reset-all"
+      },
+      {
+        "id": "uw-widget-custom-trigger",
+        "text": "Accessibility Options",
+        "type": "submit",
+        "className": "uw-widget-custom-trigger"
+      }
+    ],
+    "radioButtons": [],
+    "checkboxes": []
+  }
+}
