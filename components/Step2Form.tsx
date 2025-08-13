@@ -100,12 +100,42 @@ const Step2Form: React.FC<Step2FormProps> = ({
           onDataChange({ state });
         }
       } else {
-        setCityOptions([]);
-        alert('Invalid PIN code. Please check and try again.');
+        // Fallback with common Indian PIN codes and their locations
+        const fallbackPinCodes: Record<string, { cities: string[], state: string }> = {
+          '110001': { cities: ['New Delhi'], state: 'Delhi' },
+          '400001': { cities: ['Mumbai'], state: 'Maharashtra' },
+          '560001': { cities: ['Bangalore'], state: 'Karnataka' },
+          '700001': { cities: ['Kolkata'], state: 'West Bengal' },
+          '600001': { cities: ['Chennai'], state: 'Tamil Nadu' },
+          '500001': { cities: ['Hyderabad'], state: 'Telangana' },
+          '380001': { cities: ['Ahmedabad'], state: 'Gujarat' },
+          '302001': { cities: ['Jaipur'], state: 'Rajasthan' },
+          '411001': { cities: ['Pune'], state: 'Maharashtra' },
+          '226001': { cities: ['Lucknow'], state: 'Uttar Pradesh' },
+          '160001': { cities: ['Chandigarh'], state: 'Chandigarh' },
+          '682001': { cities: ['Kochi'], state: 'Kerala' },
+          '751001': { cities: ['Bhubaneswar'], state: 'Odisha' },
+          '800001': { cities: ['Patna'], state: 'Bihar' },
+          '492001': { cities: ['Raipur'], state: 'Chhattisgarh' },
+        };
+
+        if (fallbackPinCodes[pinCode]) {
+          const location = fallbackPinCodes[pinCode];
+          setCityOptions(location.cities);
+          onDataChange({ 
+            city: location.cities[0], 
+            state: location.state 
+          });
+        } else {
+          setCityOptions([]);
+          // Don't show alert, just allow manual entry
+          console.log('PIN code not found in fallback data, allowing manual entry');
+        }
       }
     } catch (error) {
       console.error('Error fetching location:', error);
-      // Fallback: Don't show error, just don't auto-fill
+      // Fallback: Allow manual entry without showing error
+      setCityOptions([]);
     } finally {
       setIsLoadingLocation(false);
     }
